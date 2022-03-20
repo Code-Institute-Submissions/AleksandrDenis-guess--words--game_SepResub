@@ -53,4 +53,6 @@ while mistakes_allowed > 0:
     if ''.join(word_guessed) == word:
         print("Congratulations! " + players_name + " you guessed the word!")
         break
+    elif mistakes_allowed == 0:
+        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
         
