@@ -10,4 +10,13 @@ def get_word(fname):
     return word.upper()
 word = get_word('wordlist.txt')
 print(word)
-    
+
+def word_underscore():
+    """
+    Show underscores
+    Same length as mystery word
+    """
+    word_underscore = []
+    for i in range(len(word)):
+        word_underscore.append('_')
+        return ''.join(word_underscore)
