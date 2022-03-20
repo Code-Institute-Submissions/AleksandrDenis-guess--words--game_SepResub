@@ -1,7 +1,7 @@
 import random
 
 print("Welcome to word guessing game!")
-players_name = input("Before we start please tell me your name: ")
+players_name = input("Before we start please tell me your name:\n ")
 print("\n")
 print("Hello, " + players_name + " and best of luck!")
 
@@ -35,7 +35,7 @@ word_guessed = list(word_underscore)
 while mistakes_allowed > 0:
     print("You only allowed " + str(mistakes_allowed) + " mistakes")
     print("\n")
-    guess = input("Please " + players_name + " guess letter: ").upper()
+    guess = input("Please " + players_name + " guess letter:\n ").upper()
     if guess in letters_guessed:
         print("You alredy guessed the letter", guess)
     elif guess not in word:
