@@ -1,12 +1,14 @@
 import random
-#Intruduction
 print("Welcome to word guessing game!")
 print("----------------------------------------")
-print("Game will randomly select a Mystery Word.\nYou will have six chances to guess what it\nis one letter at a time.")
+print("Game will randomly select a Mystery Word.\n",
+      "You will have six chances to guess what it\n",
+      "is one letter at a time.")
 print("----------------------------------------")
 players_name = input("Before we start please tell me your name:\n ")
 print("\n")
 print("Hello, " + players_name + " and best of luck!")
+
 
 def get_word(fname):
     """
@@ -17,7 +19,9 @@ def get_word(fname):
     word = random.choice(word_list.read().split())
     return word.upper()
 
+
 word = get_word('wordlist.txt')
+
 
 def word_underscore():
     """
@@ -28,6 +32,8 @@ def word_underscore():
     for i in range(len(word)):
         word_underscore.append('_')
     return ''.join(word_underscore)
+
+
 word_underscore = word_underscore()
 print(word_underscore)
 
