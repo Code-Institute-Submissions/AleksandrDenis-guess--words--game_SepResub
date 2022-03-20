@@ -44,3 +44,8 @@ while mistakes_allowed > 0:
         letters_guessed.append(guess)
     else:
         print("Weldone " + players_name + " " + guess + " is in the word.")
+        for i in range(len(word)):
+            if list(word)[i] == guess:
+                word_guessed[i] = guess
+        print(''.join(word_guessed))
+        letters_guessed.append(guess)
