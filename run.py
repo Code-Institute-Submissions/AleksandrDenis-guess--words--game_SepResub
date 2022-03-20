@@ -49,3 +49,8 @@ while mistakes_allowed > 0:
                 word_guessed[i] = guess
         print(''.join(word_guessed))
         letters_guessed.append(guess)
+        
+    if ''.join(word_guessed) == word:
+        print("Congratulations! " + players_name + " you guessed the word!")
+        break
+        
