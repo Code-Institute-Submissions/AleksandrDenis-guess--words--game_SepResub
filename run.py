@@ -32,3 +32,15 @@ print(word_underscore)
 mistakes_allowed = 6
 letters_guessed = []
 word_guessed = list(word_underscore)
+
+while mistakes_allowed > 0:
+    print("You only allowed " + str(mistakes_allowed) + " mistakes")
+    guess = input("Please " + players_name + " guess letter: ").upper()
+    if guess in letters_guessed:
+        print("You alredy guessed the letter", guess)
+    elif guess not in word:
+        print(guess, " is not in the word.")
+        mistakes_allowed -= 1
+        letters_guessed.append(guess)
+    else:
+        print("Weldone " + players_name + " " + guess + " is in the word.")
