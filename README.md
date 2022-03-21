@@ -1,4 +1,4 @@
-# GUESS WORD 
+# GUESS WORD   <a name="top"></a>
 
 Guess Word is a Python terminal game, wich runs in the mock terminal on Heroku.
 
@@ -74,6 +74,8 @@ I have manually tested this project:
    * Set the buildbacks to Python and NodeJS in that order
    * Link the Heroku app to the repository
    * Click on Deploy
+
+### [Go To Top](#top)
  
 
 
