@@ -37,4 +37,13 @@ is one letter at a time.
 * Allow to input only letters
 * Allow user to choose play again or not after game finished
 
+# Bugs
+## Solved bugs
+* Writing project i had incorrect Indentation what made program stop running. 
+* After installing extension in gitpod that identifies indentation errors i was able to run program
+
+## Remaining Bugs
+* No Bugs that i aware of remaining
+
+
   
