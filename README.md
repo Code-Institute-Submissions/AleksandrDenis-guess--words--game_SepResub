@@ -24,6 +24,7 @@ is one letter at a time.
  
 * Latter input
   * Check for letter in mystery word
+  * Check if latter has been guessed
   * Returns respond if letter in word or not
   #Add imgage
   
