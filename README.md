@@ -37,6 +37,12 @@ is one letter at a time.
 * Allow to input only letters
 * Allow user to choose play again or not after game finished
 
+# Testing 
+I have manually tested this project:
+* Passed the code trough a PEP8
+* Tested in my local terminal
+* Input letters and checked if system respond as shown in images above
+
 # Bugs
 ## Solved bugs
 * Writing project i had incorrect Indentation what made program stop running. 
