@@ -4,7 +4,7 @@ Guess Word is a Python terminal game, wich runs in the mock terminal on Heroku.
 
 Main objective of game that user have to try guess mystery word.
 
-#ADD Imgage
+![multi screen](readmeimges/responsive.JPG)
 
 The live link can be found here - [Guess word](https://guess-word-g.herokuapp.com/)
 
@@ -28,18 +28,19 @@ is one letter at a time.
   * Welcomes user
   * Print rules of the game
   * Ask user to imput name
- #ADD Image
+![Welcome screen](readmeimges/welcomescreen.JPG)
  
 * Latter input
   * Check for letter in mystery word
   * Check if latter has been guessed
   * Returns respond if letter in word or not
-  #Add imgage
+![Guess letter](readmeimges/guesslatter.JPG)
   
 * Game outcome
   * Show user if word guessed correct
   * Show user if ran out of mistakes allowed
-  #ADD image
+![Game outcome](readmeimges/endgame.JPG)
+![Game outcome2](readmeimges/endgame2.JPG)
   
 ## Features left to implement
 * Allow to input only one letter
@@ -63,7 +64,7 @@ I have manually tested this project:
 # Validator testing
 * PEP8
  * No errors were returned from PEP8 only some warnings
- #ADD Image
+![PEP8](readmeimges/pep8.JPG)
  
  # Deployment
  
