@@ -22,12 +22,19 @@ is one letter at a time.
   * Ask user to imput name
  #ADD Image
  
- * Latter input
+* Latter input
   * Check for letter in mystery word
   * Returns respond if letter in word or not
   #Add imgage
   
- * Game outcome
+* Game outcome
   * Show user if word guessed correct
   * Show user if ran out of mistakes allowed
   #ADD image
+  
+## Features left to implement
+* Allow to input only one letter
+* Allow to input only letters
+* Allow user to choose play again or not after game finished
+
+  
