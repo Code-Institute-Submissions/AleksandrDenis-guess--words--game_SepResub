@@ -45,5 +45,13 @@ is one letter at a time.
 ## Remaining Bugs
 * No Bugs that i aware of remaining
 
+# Validator testing
+* PEP8
+ * No errors were returned from PEP8 only some warnings
+ #ADD Image
+ 
+ # Deployment
+ 
+
 
   
