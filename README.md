@@ -8,6 +8,14 @@ Main objective of game that user have to try guess mystery word.
 
 The live link can be found here - [Guess word](https://guess-word-g.herokuapp.com/)
 
+# Index
+* [How to play Game](How-to-play-Game)
+* [Features](Features)
+* [Testing](Testing)
+* [Bugs](Bugs)
+* [Validator testing](Validator-testing)
+* [Deployment](Deployment)
+
 # How to play Game
 
 Game will randomly select a Mystery Word.
