@@ -38,6 +38,10 @@ def word_underscore():
 word_underscore = word_underscore()
 print(word_underscore)
 
+
+def display_game(word_underscore):
+    print()
+
 mistakes_allowed = 6
 letters_guessed = []
 word_guessed = list(word_underscore)
