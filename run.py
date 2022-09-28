@@ -40,8 +40,35 @@ print(word_underscore)
 
 
 def display_game(word_underscore):
+    """
+    Print underscore lenght of the word
+    """
     print()
 
+def get_guess(fname):
+    """
+    allow only one letter at the time
+    warn about letter already guessed
+    allow only letters 
+    """
+    while True:
+        guess = input("Please " + players_name + " guess letter:\n ").upper()
+        guess = guess.upper()
+        if len(guess) != 1:
+            print("Please only type one letter at the time.")
+        elif guess in letters_guessed:
+            print("You alredy guessed the letter", guess)
+        elif not guess.isalpha():
+            print("Only letters allowed.")
+        else:
+            return guess
+
+
+mistakes_allowed = 6
+letters_guessed = []
+
+
+"""
 mistakes_allowed = 6
 letters_guessed = []
 word_guessed = list(word_underscore)
@@ -68,3 +95,4 @@ while mistakes_allowed > 0:
         break
     elif mistakes_allowed == 0:
         print("Sorry, you ran out of tries. The word was " + random_word)        
+"""
