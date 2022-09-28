@@ -34,11 +34,15 @@ is one letter at a time.
   * Check for letter in mystery word
   * Check if latter has been guessed
   * Returns respond if letter in word or not
+  * Allow to input only one letter at the time
+  * Allow only input letters
+  * Gives feedback to user
 ![Guess letter](readmeimges/guesslatter.JPG)
   
 * Game outcome
   * Show user if word guessed correct
   * Show user if ran out of mistakes allowed
+  * Allow user to choose play again or not after game finished
 ![Game outcome](readmeimges/endgame.JPG)
 ![Game outcome2](readmeimges/endgame2.JPG)
   
