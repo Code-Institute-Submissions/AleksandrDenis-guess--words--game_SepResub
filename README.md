@@ -9,12 +9,12 @@ Main objective of game that user have to try guess mystery word.
 The live link can be found here - [Guess word](https://guess-word-g.herokuapp.com/)
 
 # Index
-* [How to play Game](How-to-play-Game)
-* [Features](Features)
-* [Testing](Testing)
-* [Bugs](Bugs)
-* [Validator testing](Validator-testing)
-* [Deployment](Deployment)
+* [How to play Game](#How-to-play-Game)
+* [Features](#Features)
+* [Testing](#Testing)
+* [Bugs](#Bugs)
+* [Deployment](#Deployment)
+* [Acknowledgements](#Acknowledgements)
 
 # How to play Game
 
@@ -28,7 +28,7 @@ is one letter at a time.
   * Welcomes user
   * Print rules of the game
   * Ask user to imput name
-![Welcome screen](readmeimges/welcomescreen.JPG)
+![Welcome screen](readmeimges/welcome.JPG)
  
 * Latter input
   * Check for letter in mystery word
@@ -44,7 +44,10 @@ is one letter at a time.
   * Show user if ran out of mistakes allowed
   * Allow user to choose play again or not after game finished
 ![Game outcome](readmeimges/endgame.JPG)
+
 ![Game outcome2](readmeimges/endgame2.JPG)
+
+![Game outcome3](readmeimges/playagain.JPG)
   
 ## Features left to implement
 * Allow user to keep high score
@@ -56,10 +59,15 @@ I have manually tested this project:
 * Input not letters and checked if system respond
 * Input multi letters and checked if system respond
 ![Game test](readmeimges/wrong.JPG)
-![Game test2](readmeimges/allredy guessd.JPG)
+
+![Game test2](readmeimges/allredyguessd.JPG)
+
 ![Game test3](readmeimges/correct.JPG)
-![Game test4](readmeimges/not a letter.JPG)
-![Game test5](readmeimges/one letter.JPG)
+
+![Game test4](readmeimges/notaletter.JPG)
+
+![Game test5](readmeimges/oneletter.JPG)
+
 
 # Bugs
 ## Solved bugs
@@ -69,11 +77,7 @@ I have manually tested this project:
 ## Remaining Bugs
 * No Bugs that i aware of remaining
 
-# Validator testing
-* PEP8
- * No errors were returned from PEP8 only some warnings
-![PEP8](readmeimges/pep8.JPG)
- 
+
  # Deployment
  
  This project was deployed using mock terminal for Heroku.
@@ -83,6 +87,9 @@ I have manually tested this project:
    * Set the buildbacks to Python and NodeJS in that order
    * Link the Heroku app to the repository
    * Click on Deploy
+
+ # Acknowledgements
+ * Thank you to slack and stackowerflow community for guidence and support. 
 
 ### [Go To Top](#top)
  
