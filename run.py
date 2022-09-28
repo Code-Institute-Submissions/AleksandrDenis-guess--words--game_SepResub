@@ -114,6 +114,7 @@ while True:
             MISTAKES_ALLOWED = 6
             letters_guessed = []
             word_guessed = list(word_underscore)
+            random_word = get_word('wordlist.txt')
             GAME_OVER = False
         else:
             break
