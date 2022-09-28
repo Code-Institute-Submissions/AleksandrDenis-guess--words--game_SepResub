@@ -117,29 +117,3 @@ while True:
             GAME_OVER = False
         else:
             break
-"""
-
-
-while mistakes_allowed > 0:
-    print("You only allowed " + str(mistakes_allowed) + " mistakes")
-    print("\n")
-    guess = input("Please " + players_name + " guess letter:\n ").upper()
-    if guess in letters_guessed:
-        print("You alredy guessed the letter", guess)
-    elif guess not in random_word:
-        print(guess, " is not in the word.")
-        mistakes_allowed -= 1
-        letters_guessed.append(guess)
-    else:
-        print("Weldone " + players_name + " " + guess + " is in the word.")
-        for i in range(len(random_word)):
-            if list(random_word)[i] == guess:
-                word_guessed[i] = guess
-        print(''.join(word_guessed))
-        letters_guessed.append(guess)
-    if ''.join(word_guessed) == random_word:
-        print("Congratulations! " + players_name + " you guessed the word!")
-        break
-    elif mistakes_allowed == 0:
-        print("Sorry, you ran out of tries. The word was " + random_word)        
-"""
