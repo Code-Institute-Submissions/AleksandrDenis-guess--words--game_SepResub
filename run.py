@@ -1,6 +1,6 @@
 import random
 # greating
-print("Welcome to word guessing game fruit edition!") 
+print("Welcome to word guessing game fruit edition!")
 print("----------------------------------------")
 print("Game will randomly select a Mystery Word.\n",
       "You will have six chances to guess what it\n",
@@ -13,8 +13,8 @@ print("Hello, " + players_name + " your word is:")
 
 def get_word(fname):
     """
-    Get word from list 
-    Choose random word 
+    Get word from list
+    Choose random word
     """
     word_list = open('wordlist.txt', 'r+')
     random_word = random.choice(word_list.read().split())
@@ -44,13 +44,13 @@ def display_game(word_underscore):
     Print underscore lenght of the word
     """
     print()
-    
+
 
 def get_guess(fname):
     """
     allow only one letter at the time
     warn about letter already guessed
-    allow only letters 
+    allow only letters
     """
     while True:
         guess = input("Please " + players_name + " guess letter:\n ").upper()
@@ -86,10 +86,12 @@ while True:
     display_game(word_underscore)
 
     guess = get_guess(word_underscore)
-    
+
     if mistakes_allowed > 0:
-        print("You only allowed " + str(mistakes_allowed) + " mistakes remaining.")
-        
+        print(
+            "You only allowed " + str(mistakes_allowed)
+            + " mistakes remaining.")
+
     if guess not in random_word:
         print(guess, "is not in the word.")
         mistakes_allowed -= 1
@@ -103,11 +105,9 @@ while True:
         letters_guessed.append(guess)
     if ''.join(word_guessed) == random_word:
         print("Congratulations! " + players_name + " you guessed the word!")
-    
+
     elif mistakes_allowed == 0:
         print("Sorry, you ran out of tries. The word was " + random_word)
-        
-
         game_over = True
     if game_over:
         if start_over():
