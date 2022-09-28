@@ -16,7 +16,7 @@ def get_word(fname):
     Get word from list
     Choose random word
     """
-    word_list = open('wordlist.txt', 'r+')
+    word_list = open('wordlist.txt', 'r+', encoding='UTF-8')
     random_word = random.choice(word_list.read().split())
     return random_word.upper()
 
@@ -65,7 +65,7 @@ def get_guess(fname):
             return guess
 
 
-mistakes_allowed = 6
+MISTAKES_ALLOWED = 6
 letters_guessed = []
 
 
@@ -79,7 +79,7 @@ def start_over():
 
 
 word_guessed = list(word_underscore)
-game_over = False
+GAME_OVER = False
 
 
 while True:
@@ -87,14 +87,14 @@ while True:
 
     guess = get_guess(word_underscore)
 
-    if mistakes_allowed > 0:
+    if MISTAKES_ALLOWED > 0:
         print(
-            "You only allowed " + str(mistakes_allowed)
+            "You only allowed " + str(MISTAKES_ALLOWED)
             + " mistakes remaining.")
 
     if guess not in random_word:
         print(guess, "is not in the word.")
-        mistakes_allowed -= 1
+        MISTAKES_ALLOWED -= 1
         letters_guessed.append(guess)
     else:
         print("Weldone " + players_name + " " + guess + " is in the word.")
@@ -106,15 +106,15 @@ while True:
     if ''.join(word_guessed) == random_word:
         print("Congratulations! " + players_name + " you guessed the word!")
 
-    elif mistakes_allowed == 0:
+    elif MISTAKES_ALLOWED == 0:
         print("Sorry, you ran out of tries. The word was " + random_word)
-        game_over = True
-    if game_over:
+        GAME_OVER = True
+    if GAME_OVER:
         if start_over():
-            mistakes_allowed = 6
+            MISTAKES_ALLOWED = 6
             letters_guessed = []
             word_guessed = list(word_underscore)
-            game_over = False
+            GAME_OVER = False
         else:
             break
 """
