@@ -68,6 +68,14 @@ mistakes_allowed = 6
 letters_guessed = []
 
 
+def start_over():
+    """
+    allows restrt game over
+    """
+    return input("\nDo you want to play again? Press y\n",
+                 "for yes or any key for no").lower().startswith("y")
+
+
 """
 mistakes_allowed = 6
 letters_guessed = []
