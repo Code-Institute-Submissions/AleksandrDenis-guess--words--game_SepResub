@@ -44,6 +44,7 @@ def display_game(word_underscore):
     Print underscore lenght of the word
     """
     print()
+    
 
 def get_guess(fname):
     """
@@ -70,10 +71,12 @@ letters_guessed = []
 
 def start_over():
     """
-    allows restrt game over
+    allows restart game over
     """
-    return input("\nDo you want to play again? Press y\n",
-                 "for yes or any key for no").lower().startswith("y")
+    return input(
+        "Do you want to play again? Press y for yes or any key for no"
+        ).lower().startswith('y')
+
 
 word_guessed = list(word_underscore)
 game_over = False
@@ -81,10 +84,12 @@ game_over = False
 
 while True:
     display_game(word_underscore)
-    
+
     guess = get_guess(word_underscore)
+    
     if mistakes_allowed > 0:
         print("You only allowed " + str(mistakes_allowed) + " mistakes remaining.")
+        
     if guess not in random_word:
         print(guess, "is not in the word.")
         mistakes_allowed -= 1
@@ -102,7 +107,7 @@ while True:
     elif mistakes_allowed == 0:
         print("Sorry, you ran out of tries. The word was " + random_word)
         
-        
+
         game_over = True
     if game_over:
         if start_over():
