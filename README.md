@@ -47,9 +47,7 @@ is one letter at a time.
 ![Game outcome2](readmeimges/endgame2.JPG)
   
 ## Features left to implement
-* Allow to input only one letter
-* Allow to input only letters
-* Allow user to choose play again or not after game finished
+* Allow user to keep high score
 
 # Testing 
 I have manually tested this project:
