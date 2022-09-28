@@ -90,6 +90,9 @@ I have manually tested this project:
 
  # Acknowledgements
  * Thank you to slack and stackowerflow community for guidence and support. 
+ # Credits 
+ * Only allow letters when taking user Input in Python is from https://bobbyhadz.com/blog/python-input-only-letters-allowed
+ * While Loops https://www.w3schools.com/python/python_while_loops.asp
 
 ### [Go To Top](#top)
  
