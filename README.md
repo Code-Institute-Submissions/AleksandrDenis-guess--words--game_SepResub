@@ -51,9 +51,15 @@ is one letter at a time.
 
 # Testing 
 I have manually tested this project:
-* Passed the code trough a PEP8
 * Tested in my local terminal
-* Input letters and checked if system respond as shown in images above
+* Input letters and checked if system respond
+* Input not letters and checked if system respond
+* Input multi letters and checked if system respond
+![Game test](readmeimges/wrong.JPG)
+![Game test2](readmeimges/allredy guessd.JPG)
+![Game test3](readmeimges/correct.JPG)
+![Game test4](readmeimges/not a letter.JPG)
+![Game test5](readmeimges/one letter.JPG)
 
 # Bugs
 ## Solved bugs
