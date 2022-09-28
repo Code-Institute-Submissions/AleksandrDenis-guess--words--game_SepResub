@@ -1,13 +1,13 @@
 import random
-print("Welcome to word guessing game!")
+print("Welcome to word guessing game fruit edition!")
 print("----------------------------------------")
 print("Game will randomly select a Mystery Word.\n",
       "You will have six chances to guess what it\n",
       "is one letter at a time.")
 print("----------------------------------------")
-players_name = input("Before we start please tell me your name:\n ")
+players_name = input("Before we start. What should I call you?:\n ")
 print("\n")
-print("Hello, " + players_name + " and best of luck!")
+print("Hello, " + players_name + " your word is:")
 
 
 def get_word(fname):
